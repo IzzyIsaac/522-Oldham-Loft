@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>522 Oldham St | Loft Living in Pigeon Forge</title>
+<meta name="description" content="A private two-bedroom loft above a detached garage in the heart of Pigeon Forge, TN. Remodeled, mountain views, walk to Patriot Park trolley." />
+
+<style>
+  /* --------------------------------------------------------
+     Palette
+     #EDE9E6  warm off-white
+     #C9996B  warm tan / brass
+     #5C4F4A  soft espresso
+     #5C766D  muted forest green
+     -------------------------------------------------------- */
+
+  :root {
+    --cream: #EDE9E6;
+    --tan: #C9996B;
+    --espresso: #5C4F4A;
+    --forest: #5C766D;
+    --cream-dark: #e3ddd7;
+    --shadow: 0 1px 3px rgba(92, 79, 74, 0.08), 0 8px 24px rgba(92, 79, 74, 0.08);
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Georgia', 'Cambria', 'Times New Roman', serif;
+    background: var(--cream);
+    color: var(--espresso);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  img { display: block; max-width: 100%; height: auto; }
+
+  /* Typography */
+  h1, h2, h3 {
+    font-family: 'Georgia', 'Cambria', serif;
+    font-weight: 400;
+    color: var(--espresso);
+    letter-spacing: -0.01em;
+  }
+
+  .eyebrow {
+    font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--tan);
+    margin-bottom: 1rem;
+  }
+
+  /* --- Layout --- */
+  .container {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 1.25rem;
+  }
+
+  /* --- Hero --- */
+  .hero {
+    padding: 2rem 0 3rem;
+  }
+
+  .hero-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.4rem;
+    margin-bottom: 2.5rem;
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--espresso);
+  }
+
+  .hero-top .brand {
+    font-weight: 600;
+  }
+
+  .hero-top .location {
+    color: var(--forest);
+  }
+
+  .hero-top .price {
+    display: inline-block;
+    background: var(--tan);
+    color: var(--cream);
+    padding: 0.45rem 1rem;
+    border-radius: 999px;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    margin-top: 0.25rem;
+  }
+
+  /* Center the hero content */
+  .hero .container {
+    text-align: center;
+  }
+
+  .hero .eyebrow {
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: clamp(2.25rem, 7vw, 4.25rem);
+    line-height: 1.05;
+    margin: 0 auto 1.25rem;
+    max-width: 14ch;
+  }
+
+  .hero h1 em {
+    font-style: italic;
+    color: var(--forest);
+  }
+
+  .hero-lede {
+    font-size: 1.05rem;
+    max-width: 52ch;
+    color: var(--espresso);
+    opacity: 0.85;
+    margin: 0 auto 2rem;
+  }
+
+  .hero-cta-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin: 0 auto 3rem;
+  }
+
+  /* Buttons */
+  .btn {
+    display: inline-block;
+    font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1.1rem 2rem;
+    border-radius: 999px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+    cursor: pointer;
+    border: none;
+  }
+
+  .btn-primary {
+    background: var(--espresso);
+    color: var(--cream);
+    box-shadow: var(--shadow);
+  }
+  .btn-primary:hover {
+    background: var(--forest);
+    transform: translateY(-2px);
+  }
+
+  .btn-secondary {
+    background: transparent;
+    color: var(--espresso);
+    border: 1px solid var(--espresso);
+  }
+  .btn-secondary:hover {
+    background: var(--espresso);
+    color: var(--cream);
+  }
+
+  .btn-large {
+    padding: 1.3rem 2.6rem;
+    font-size: 0.9rem;
+  }
+
+  /* Hero image */
+  .hero-image {
+    position: relative;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    aspect-ratio: 16 / 10;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .hero-image-tag {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    background: rgba(237, 233, 230, 0.95);
+    color: var(--espresso);
+    padding: 0.5rem 0.9rem;
+    font-family: -apple-system, sans-serif;
+    font-size: 0.7rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    border-radius: 2px;
+    backdrop-filter: blur(6px);
+  }
+
+  /* --- Quick facts strip --- */
+  .quick-facts {
+    background: var(--espresso);
+    color: var(--cream);
+    padding: 2.5rem 0;
+    margin: 3rem 0;
+  }
+
+  .facts-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.75rem 1rem;
+    text-align: center;
+  }
+
+  .fact .number {
+    font-size: 2.25rem;
+    font-weight: 400;
+    color: var(--tan);
+    line-height: 1;
+    margin-bottom: 0.4rem;
+  }
+
+  .fact .label {
+    font-family: -apple-system, sans-serif;
+    font-size: 0.7rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    opacity: 0.85;
+  }
+
+  /* --- Section headers --- */
+  .section {
+    padding: 4rem 0;
+  }
+
+  .section-header {
+    margin: 0 auto 2.5rem;
+    max-width: 600px;
+    text-align: center;
+  }
+
+  .section-header h2 {
+    font-size: clamp(1.75rem, 4vw, 2.5rem);
+    line-height: 1.15;
+    margin-bottom: 0.75rem;
+  }
+
+  .section-header p {
+    color: var(--espresso);
+    opacity: 0.8;
+  }
+
+  /* --- Features --- */
+  .features {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1px;
+    background: var(--cream-dark);
+    border-top: 1px solid var(--cream-dark);
+    border-bottom: 1px solid var(--cream-dark);
+  }
+
+  .feature {
+    background: var(--cream);
+    padding: 2rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0.75rem;
+  }
+
+  .feature .dot {
+    flex-shrink: 0;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--tan);
+    margin: 0 0 0.25rem;
+  }
+
+  .feature h3 {
+    font-size: 1.05rem;
+    margin-bottom: 0.3rem;
+    color: var(--espresso);
+  }
+
+  .feature p {
+    font-size: 0.95rem;
+    color: var(--espresso);
+    opacity: 0.8;
+    line-height: 1.5;
+    max-width: 32ch;
+  }
+
+  /* --- Gallery --- */
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75rem;
+  }
+
+  .gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 4px;
+    cursor: pointer;
+    aspect-ratio: 4 / 3;
+    background: var(--cream-dark);
+  }
+
+  .gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+  }
+
+  .gallery-item:hover img {
+    transform: scale(1.04);
+  }
+
+  /* --- Good to know --- */
+  .good-to-know {
+    background: var(--forest);
+    color: var(--cream);
+    padding: 4rem 0;
+    text-align: center;
+  }
+
+  .good-to-know .eyebrow {
+    color: var(--tan);
+  }
+
+  .good-to-know h2 {
+    color: var(--cream);
+    font-size: clamp(1.75rem, 4vw, 2.25rem);
+    margin-bottom: 2.5rem;
+  }
+
+  .gtk-list {
+    list-style: none;
+    display: grid;
+    gap: 1.75rem;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .gtk-list li {
+    padding: 1.25rem 1rem 0;
+    text-align: center;
+    border-top: 2px solid var(--tan);
+    font-size: 1rem;
+    line-height: 1.55;
+  }
+
+  .gtk-list strong {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.35rem;
+    color: #fff;
+  }
+
+  .gtk-list span {
+    opacity: 0.9;
+    display: block;
+    max-width: 36ch;
+    margin: 0 auto;
+  }
+
+  /* --- Final CTA --- */
+  .final-cta {
+    text-align: center;
+    padding: 5rem 1.25rem;
+  }
+
+  .final-cta h2 {
+    font-size: clamp(2rem, 5vw, 3rem);
+    line-height: 1.1;
+    margin-bottom: 1rem;
+    max-width: 18ch;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .final-cta h2 em {
+    font-style: italic;
+    color: var(--tan);
+  }
+
+  .final-cta p {
+    max-width: 50ch;
+    margin: 0 auto 2.5rem;
+    opacity: 0.85;
+  }
+
+  /* --- Footer --- */
+  footer {
+    background: var(--espresso);
+    color: var(--cream);
+    padding: 2.5rem 0;
+    text-align: center;
+    font-family: -apple-system, sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 0.08em;
+  }
+
+  footer .addr {
+    color: var(--tan);
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    margin-bottom: 0.5rem;
+  }
+
+  footer .small {
+    opacity: 0.6;
+    font-size: 0.7rem;
+    margin-top: 1rem;
+  }
+
+  /* ============ LIGHTBOX ============ */
+  .lightbox {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(20, 17, 15, 0.94);
+    z-index: 1000;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    user-select: none;
+  }
+
+  .lightbox.active {
+    display: flex;
+  }
+
+  .lightbox-img-wrap {
+    max-width: 95vw;
+    max-height: 88vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .lightbox-img {
+    max-width: 100%;
+    max-height: 88vh;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    border-radius: 2px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+  }
+
+  .lightbox-btn {
+    position: absolute;
+    background: rgba(237, 233, 230, 0.12);
+    border: 1px solid rgba(237, 233, 230, 0.3);
+    color: var(--cream);
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    backdrop-filter: blur(8px);
+    transition: background 0.2s ease;
+  }
+
+  .lightbox-btn:hover {
+    background: rgba(237, 233, 230, 0.25);
+  }
+
+  .lightbox-close {
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.6rem;
+  }
+
+  .lightbox-prev { left: 1rem; }
+  .lightbox-next { right: 1rem; }
+
+  .lightbox-counter {
+    position: absolute;
+    bottom: 1.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--cream);
+    font-family: -apple-system, sans-serif;
+    font-size: 0.75rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    opacity: 0.7;
+  }
+
+  /* ============ DESKTOP / TABLET BREAKPOINTS ============ */
+  @media (min-width: 640px) {
+    .hero { padding: 3rem 0 4rem; }
+    .facts-grid { grid-template-columns: repeat(4, 1fr); }
+    .features { grid-template-columns: 1fr 1fr; }
+    .gallery { grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+    .gtk-list { grid-template-columns: 1fr 1fr; gap: 2rem 2.5rem; }
+    .lightbox-prev { left: 2rem; }
+    .lightbox-next { right: 2rem; }
+    .lightbox-close { top: 1.5rem; right: 1.5rem; }
+    .container { padding: 0 2rem; }
+  }
+
+  @media (min-width: 900px) {
+    .hero-image { aspect-ratio: 21 / 10; }
+    .features { grid-template-columns: 1fr 1fr 1fr; }
+    .gallery { grid-template-columns: repeat(4, 1fr); }
+    .feature { padding: 2rem 1.75rem; }
+  }
+
+  /* Subtle entrance animation */
+  @media (prefers-reduced-motion: no-preference) {
+    .hero h1, .hero-lede, .hero-cta-row, .hero-image {
+      opacity: 0;
+      animation: fadeUp 0.8s ease forwards;
+    }
+    .hero-lede { animation-delay: 0.15s; }
+    .hero-cta-row { animation-delay: 0.3s; }
+    .hero-image { animation-delay: 0.45s; }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(12px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  }
+</style>
+</head>
+<body>
+
+<!-- ============ HERO ============ -->
+<header class="hero">
+  <div class="container">
+    <div class="hero-top">
+      <span class="brand">522 Oldham St</span>
+      <span class="location">Pigeon Forge, TN</span>
+      <span class="price">$1,800 / month</span>
+    </div>
+
+    <div class="eyebrow">Now accepting applications</div>
+    <h1>A private loft <em>in the heart</em> of Pigeon Forge.</h1>
+    <p class="hero-lede">
+      Two bedrooms, one bath, and a covered porch with a view of Mount LeConte.
+      Tucked above a detached garage on a quiet dead-end street, close to the Old Mill
+      and a short walk to the Patriot Park trolley.
+    </p>
+
+    <div class="hero-cta-row">
+      <a class="btn btn-primary btn-large"
+         href="https://form.jotform.com/261185727292059"
+         target="_blank" rel="noopener">
+        Pre-Screening Application
+      </a>
+      <a class="btn btn-secondary" href="#gallery">View Photos</a>
+    </div>
+
+    <div class="hero-image">
+      <img src="WEBP/Exterior.webp" alt="Exterior view of 522 Oldham St with Smoky Mountains in the background at dusk" />
+      <span class="hero-image-tag">Mountain views included</span>
+    </div>
+  </div>
+</header>
+
+<!-- ============ QUICK FACTS ============ -->
+<section class="quick-facts">
+  <div class="container">
+    <div class="facts-grid">
+      <div class="fact">
+        <div class="number">2</div>
+        <div class="label">Bedrooms</div>
+      </div>
+      <div class="fact">
+        <div class="number">1</div>
+        <div class="label">Bathroom</div>
+      </div>
+      <div class="fact">
+        <div class="number">1</div>
+        <div class="label">Flight of Stairs</div>
+      </div>
+      <div class="fact">
+        <div class="number">★</div>
+        <div class="label">Mountain Views</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FEATURES ============ -->
+<section class="section">
+  <div class="container">
+    <div class="section-header">
+      <div class="eyebrow">What's inside</div>
+      <h2>Thoughtfully updated, simply done.</h2>
+      <p>Move-in ready with the things that matter: fresh systems, clean finishes, and a layout that lives well.</p>
+    </div>
+
+    <div class="features">
+      <div class="feature">
+        <span class="dot"></span>
+        <div>
+          <h3>Remodeled Kitchen</h3>
+          <p>Updated cabinetry, stainless appliances, and a window over the sink with a mountain view.</p>
+        </div>
+      </div>
+      <div class="feature">
+        <span class="dot"></span>
+        <div>
+          <h3>Remodeled Bathroom</h3>
+          <p>New vanity, new toilet, tub/shower, and clean tile floors throughout.</p>
+        </div>
+      </div>
+      <div class="feature">
+        <span class="dot"></span>
+        <div>
+          <h3>New HVAC System</h3>
+          <p>Comfortable year-round with a modern, efficient system installed.</p>
+        </div>
+      </div>
+      <div class="feature">
+        <span class="dot"></span>
+        <div>
+          <h3>New Lighting & Electrical</h3>
+          <p>Updated wiring, outlets, fixtures, and ceiling fans throughout.</p>
+        </div>
+      </div>
+      <div class="feature">
+        <span class="dot"></span>
+        <div>
+          <h3>Covered Front Porch</h3>
+          <p>A private covered porch facing Mount LeConte and Bluff Mountain.</p>
+        </div>
+      </div>
+      <div class="feature">
+        <span class="dot"></span>
+        <div>
+          <h3>Walk to the Trolley</h3>
+          <p>Walking distance to Patriot Park trolley station, with easy access to the Parkway.</p>
+        </div>
+      </div>
+      <div class="feature">
+        <span class="dot"></span>
+        <div>
+          <h3>Private Parking</h3>
+          <p>Dedicated on-site parking.</p>
+        </div>
+      </div>
+      <div class="feature">
+        <span class="dot"></span>
+        <div>
+          <h3>Heart of Pigeon Forge</h3>
+          <p>Close to the Old Mill and minutes to the Parkway, dining, attractions, and the Smokies.</p>
+        </div>
+      </div>
+      <div class="feature">
+        <span class="dot"></span>
+        <div>
+          <h3>Quiet Dead-End Street</h3>
+          <p>Tucked away on a quiet dead-end street, just blocks from the Old Mill.</p>
+        </div>
+      </div>
+      <div class="feature">
+        <span class="dot"></span>
+        <div>
+          <h3>Keypad Entry</h3>
+          <p>New keypad lock for key-free ease, with a backup key included.</p>
+        </div>
+      </div>
+      <div class="feature">
+        <span class="dot"></span>
+        <div>
+          <h3>New Tin Roof</h3>
+          <p>Brand-new tin roof for lasting durability, plus the calming sound of rain overhead.</p>
+        </div>
+      </div>
+      <div class="feature">
+        <span class="dot"></span>
+        <div>
+          <h3>Private Living Space</h3>
+          <p>A quiet loft above a detached garage with its own entrance and your own space.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ GALLERY ============ -->
+<section class="section" id="gallery">
+  <div class="container">
+    <div class="section-header">
+      <div class="eyebrow">A look around</div>
+      <h2>Take the tour.</h2>
+      <p>Tap any photo to view full-screen. Use the arrows or your keyboard to browse.</p>
+    </div>
+
+    <div class="gallery" id="galleryGrid">
+      <!-- Items injected by JS -->
+    </div>
+  </div>
+</section>
+
+<!-- ============ GOOD TO KNOW ============ -->
+<section class="good-to-know">
+  <div class="container">
+    <div class="eyebrow">Good to know</div>
+    <h2>A few honest details.</h2>
+    <ul class="gtk-list">
+      <li>
+        <strong>One flight of stairs</strong>
+        <span>The living space sits on the second floor, with one set of exterior stairs to access it.</span>
+      </li>
+      <li>
+        <strong>Private living space</strong>
+        <span>The loft is fully self-contained with its own entrance and your own quiet space.</span>
+      </li>
+      <li>
+        <strong>Dedicated parking</strong>
+        <span>You'll have private parking spots reserved just for this unit.</span>
+      </li>
+      <li>
+        <strong>Garage not included</strong>
+        <span>The detached garage below the unit is not part of the rental.</span>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============ FINAL CTA ============ -->
+<section class="final-cta">
+  <div class="container">
+    <div class="eyebrow">Interested?</div>
+    <h2>Start with a quick <em>pre-screening</em>.</h2>
+    <p>If the loft sounds like the right fit, fill out the short application below. We'll be in touch from there.</p>
+    <a class="btn btn-primary btn-large"
+       href="https://form.jotform.com/261185727292059"
+       target="_blank" rel="noopener">
+      Pre-Screening Application
+    </a>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="container">
+    <div class="addr">522 Oldham St · Pigeon Forge, TN</div>
+    <div>Private loft above a detached garage</div>
+    <div class="small">© 522 Oldham St Loft. All photos of actual unit.</div>
+  </div>
+</footer>
+
+<!-- ============ LIGHTBOX ============ -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo gallery">
+  <button class="lightbox-btn lightbox-close" id="lbClose" aria-label="Close">✕</button>
+  <button class="lightbox-btn lightbox-prev" id="lbPrev" aria-label="Previous photo">‹</button>
+  <div class="lightbox-img-wrap">
+    <img class="lightbox-img" id="lbImg" alt="" />
+  </div>
+  <button class="lightbox-btn lightbox-next" id="lbNext" aria-label="Next photo">›</button>
+  <div class="lightbox-counter" id="lbCounter">1 / 1</div>
+</div>
+
+<script>
+  /* ============================================================
+     Photo data
+     ============================================================ */
+  const photos = [
+    { src: 'WEBP/LivingRoom.webp',     alt: 'Spacious living room with hardwood floors and ceiling fan',     featured: true },
+    { src: 'WEBP/Kitchen1.webp',       alt: 'Kitchen with blue cabinets and stainless appliances' },
+    { src: 'WEBP/Kitchen2.webp',       alt: 'Kitchen view showing range and refrigerator' },
+    { src: 'WEBP/Kitchen3.webp',       alt: 'Kitchen sink with mountain view through window' },
+    { src: 'WEBP/MainBedroom1.webp',   alt: 'Main bedroom with hardwood floors and ceiling fan' },
+    { src: 'WEBP/MainBedroom2.webp',   alt: 'Main bedroom showing closet and doorway' },
+    { src: 'WEBP/SecondBedroom1.webp', alt: 'Second bedroom with window and natural light' },
+    { src: 'WEBP/SecondBedroom2.webp', alt: 'Second bedroom doorway view' },
+    { src: 'WEBP/Bathroom1.webp',      alt: 'Bathroom with vanity, mirror, and tub/shower' },
+    { src: 'WEBP/Bathroom2.webp',      alt: 'Bathroom showing toilet and shower area' },
+    { src: 'WEBP/Porch1.webp',         alt: 'Covered front porch with wood decking' },
+    { src: 'WEBP/Porch2.webp',         alt: 'View from porch toward Mount LeConte' },
+    { src: 'WEBP/Exterior.webp',       alt: 'Exterior of 522 Oldham St at dusk with mountains' },
+    { src: 'WEBP/Satellite1.webp',     alt: 'Satellite view of property and lot' },
+    { src: 'WEBP/Satellite2.webp',     alt: 'Aerial view showing proximity to Pigeon Forge' },
+    { src: 'WEBP/Satellite3.webp',     alt: 'Wide map view of Pigeon Forge area' }
+  ];
+
+  /* ============================================================
+     Build gallery
+     ============================================================ */
+  const grid = document.getElementById('galleryGrid');
+
+  photos.forEach((photo, index) => {
+    const item = document.createElement('div');
+    item.className = 'gallery-item' + (photo.featured ? ' featured' : '');
+    item.dataset.index = index;
+    item.innerHTML = `<img src="${photo.src}" alt="${photo.alt}" loading="lazy" />`;
+    item.addEventListener('click', () => openLightbox(index));
+    grid.appendChild(item);
+  });
+
+  /* ============================================================
+     Lightbox logic
+     ============================================================ */
+  const lightbox = document.getElementById('lightbox');
+  const lbImg = document.getElementById('lbImg');
+  const lbCounter = document.getElementById('lbCounter');
+  let currentIndex = 0;
+
+  function openLightbox(index) {
+    currentIndex = index;
+    updateLightbox();
+    lightbox.classList.add('active');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeLightbox() {
+    lightbox.classList.remove('active');
+    document.body.style.overflow = '';
+  }
+
+  function updateLightbox() {
+    const photo = photos[currentIndex];
+    lbImg.src = photo.src;
+    lbImg.alt = photo.alt;
+    lbCounter.textContent = `${currentIndex + 1} / ${photos.length}`;
+  }
+
+  function next() {
+    currentIndex = (currentIndex + 1) % photos.length;
+    updateLightbox();
+  }
+
+  function prev() {
+    currentIndex = (currentIndex - 1 + photos.length) % photos.length;
+    updateLightbox();
+  }
+
+  // Buttons
+  document.getElementById('lbClose').addEventListener('click', closeLightbox);
+  document.getElementById('lbNext').addEventListener('click', (e) => { e.stopPropagation(); next(); });
+  document.getElementById('lbPrev').addEventListener('click', (e) => { e.stopPropagation(); prev(); });
+
+  // Click outside image to close
+  lightbox.addEventListener('click', (e) => {
+    if (e.target === lightbox || e.target.classList.contains('lightbox-img-wrap')) {
+      closeLightbox();
+    }
+  });
+
+  // Keyboard navigation
+  document.addEventListener('keydown', (e) => {
+    if (!lightbox.classList.contains('active')) return;
+    if (e.key === 'Escape') closeLightbox();
+    if (e.key === 'ArrowRight') next();
+    if (e.key === 'ArrowLeft') prev();
+  });
+
+  // Touch swipe support (mobile)
+  let touchStartX = 0;
+  let touchEndX = 0;
+
+  lightbox.addEventListener('touchstart', (e) => {
+    touchStartX = e.changedTouches[0].screenX;
+  }, { passive: true });
+
+  lightbox.addEventListener('touchend', (e) => {
+    touchEndX = e.changedTouches[0].screenX;
+    const diff = touchStartX - touchEndX;
+    if (Math.abs(diff) > 50) {
+      if (diff > 0) next();
+      else prev();
+    }
+  }, { passive: true });
+</script>
+
+</body>
+</html>
