@@ -539,6 +539,7 @@
     .features { grid-template-columns: 1fr 1fr; }
     .gallery { grid-template-columns: repeat(3, 1fr); gap: 1rem; }
     .gtk-list { grid-template-columns: 1fr 1fr; gap: 2rem 2.5rem; }
+    .gtk-list li:last-child { grid-column: 1 / -1; max-width: 500px; margin-left: auto; margin-right: auto; }
     .lightbox-prev { left: 2rem; }
     .lightbox-next { right: 2rem; }
     .lightbox-close { top: 1.5rem; right: 1.5rem; }
@@ -762,6 +763,10 @@
       <li>
         <strong>Garage not included</strong>
         <span>The detached garage below the unit is not part of the rental.</span>
+      </li>
+      <li>
+        <strong>No pets</strong>
+        <span>Sorry, this is a no-pet rental.</span>
       </li>
     </ul>
   </div>
