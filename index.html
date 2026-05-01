@@ -25,6 +25,15 @@
 <meta name="twitter:description" content="Two bedrooms, one bath, covered porch with views of Mount LeConte. Remodeled, walk to Patriot Park trolley. $1,800/month." />
 <meta name="twitter:image" content="https://522oldham.com/preview.jpg" />
 
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GJV3CWBYV7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-GJV3CWBYV7');
+</script>
+
 <style>
   /* --------------------------------------------------------
      Palette
@@ -916,6 +925,20 @@
       else prev();
     }
   }, { passive: true });
+
+  /* ============================================================
+     Track application button clicks in Google Analytics
+     ============================================================ */
+  document.querySelectorAll('a[href*="jotform.com"]').forEach((link, index) => {
+    link.addEventListener('click', () => {
+      if (typeof gtag === 'function') {
+        gtag('event', 'application_click', {
+          'event_category': 'engagement',
+          'event_label': index === 0 ? 'hero_button' : 'final_cta_button'
+        });
+      }
+    });
+  });
 </script>
 
 </body>
